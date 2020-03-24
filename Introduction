@@ -1,0 +1,9 @@
+Multilevel Queue Scheduling Algorithms
+
+Multi-level queue scheduling algorithm is used in scenarios where the processes can be classified into groups
+based on property like process type, CPU time, IO access, memory size, etc. In a multi-level queue scheduling
+algorithm, there will be 'n' number of queues, where 'n' is the number of groups the processes are classified
+into. Each queue will be assigned a priority and will have its own scheduling algorithm like round-robin
+scheduling or FCFS. For the process in a queue to execute, all the queues of priority higher than it should be
+empty, meaning the process in those high priority queues should have completed its execution. In this
+scheduling algorithm, once assigned to a queue, the process will not move to any other queues.
