@@ -1,9 +1,31 @@
 1.FCFS (First Come First Serve)
+              -Jobs are executed on first come, first serve basis.
+              -It is a non-preemptive, pre-emptive scheduling algorithm.
+              -Easy to understand and implement.
+              -Its implementation is based on FIFO queue.
+              -Poor in performance as average wait time is high.
 
 2.Shortest Job First
+              -This is a non-preemptive, pre-emptive scheduling algorithm.
+              -Best approach to minimize waiting time.
+              -Easy to implement in Batch systems where required CPU time is known in advance.
+              -Impossible to implement in interactive systems where required CPU time is not known.
+              -The processer should know in advance how much time process will take.
 
-3.Shortest Remaining Time First
+3.Shortest Remaining Time 
+              -Shortest remaining time (SRT) is the preemptive version of the SJF algorithm.
+              -The processor is allocated to the job closest to completion but it can be preempted by a newer ready job with shorter time to completion.
+              -Impossible to implement in interactive systems where required CPU time is not known.
+              -It is often used in batch environments where short jobs need to give preference.
 
 4.Round Robin
+              -Round Robin is the preemptive process scheduling algorithm.
+              -Each process is provided a fix time to execute, it is called a quantum.
+              -Once a process is executed for a given time period, it is preempted and other process executes for a given time period.
+              -Context switching is used to save states of preempted processes.
 
 5.Priority Scheduling
+              -Priority scheduling is a non-preemptive algorithm and one of the most common scheduling algorithms in batch systems.
+              -Each process is assigned a priority. Process with highest priority is to be executed first and so on.
+              -Processes with same priority are executed on first come first served basis.
+              -Priority can be decided based on memory requirements, time requirements or any other resource requirement.
